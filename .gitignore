@@ -1,2 +1,293 @@
-# Google App Engine generated folder
+# CyberApk Engine generated folder
 appengine-generated/
+Author = Yazid Admiral Chengho (Me)
+Credits = CyberForce7z (Me)
+.gettask Silent Patch Without Replace Anything
+.mobile.so.version.
+
+{UvAnim}
+local lib = GetLibAddress("libGTASA.so") + 0x6BD1E4;
+if(lib != 0x6BD1E4) WriteAddress(lib, "\x01", 1); // Same as *(bool*)var = true
+DeleteMe(); // Delete script from RAM after it did it's job
+
+{SkyGfx}
+local lib = GetLibAddress("libGTASA.so") + 0x6BD1E6
+[Information]
+Colorfilter_Values=default none ps2 pc
+
+[Preferences]
+Colorfilter=default
+DisableDetailTexture=0
+DisablePedSpec=1
+DontShadeUnexploredMap=1
+FixGreenDetailTexture=1
+FixMipMaps=1
+PS2_Shading=1
+PS2_Sun=1
+
+{Shadow Rendering}
+Value=255
+Resolution=512
+Dff=definiedgetallobjectmodels
+
+{Mission Scripting}
+Have you tried: :)
+m_nObjectType
+
+enum eObjectType {
+    OBJECT_MISSION = 2,
+    OBJECT_TEMPORARY = 3,
+    OBJECT_MISSION2 = 6 
+}; .begin (in the beginning)
+? .end ( end of the line)
+
+{Playboy Mode}
+25694,    cc_threesome,    cc_threesome,    quad,         THREESOME,     THRESUM,    threesome,     normal,        4,    0,    0,        -1, 0.62, 0.62,        -1
+25695,    cc_mthreesome,    cc_mthreesome,    quad,         THREESOME,     MTHRESM,    threesome,     normal,        4,    0,    0,        -1, 0.62, 0.62,        -1
+.getfilesmainv.scm
+
+{Multiplayer Mode}
+var player = new Player(0)
+var char = player.getChar() //maybe its wrong but you get the idea
+while(true)
+{
+  var p = Parcle.create() // here where is xyz you place char.getCoords() + somevalue, char.getCoords() + othervalue ........
+  wait(100)
+}  noted=pressStartbuttontobeginmultiplayermode
+
+
+{Offline/Online}
+you need something like this
+if (GetModuleHandleA("SAMP.dll")) {
+    //do something with samp                 get.join_server = .....
+}else{
+    //do something with offline/story
+}
+
+{Single Player Dlc Mods}
+Playing Carl Johnson As Player
+San Andreas Definitive Edition easy autohotkey gym script (ALT+X)
+#SingleInstance Force
+#NoEnv
+SendMode Input
+SetWorkingDir %A_ScriptDir%
+
+$!X::SetTimer, GymBot, % (Toggle:=!Toggle) ? 10 : "Off"
+
+GymBot()
+{
+    if WinActive("ahk_exe SanAndreas.exe")
+    {
+        SendInput {e down}
+        Sleep 30
+        SendInput {e up}
+    }
+}
+Playing Sweet As Player
+San Andreas Definitive Edition easy autohotkey gym script (ALT+X)
+#SingleInstance Force
+#NoEnv
+SendMode Input
+SetWorkingDir %A_ScriptDir%
+
+$!X::SetTimer, GymBot, % (Toggle:=!Toggle) ? 10 : "Off"
+
+GymBot()
+{
+    if WinActive("ahk_exe SanAndreas.exe")
+    {
+        SendInput {e down}
+        Sleep 30
+        SendInput {e up}
+    }
+}
+
+Playing Ryder As Player
+San Andreas Definitive Edition easy autohotkey gym script (ALT+X)
+#SingleInstance Force
+#NoEnv
+SendMode Input
+SetWorkingDir %A_ScriptDir%
+
+$!X::SetTimer, GymBot, % (Toggle:=!Toggle) ? 10 : "Off"
+
+GymBot()
+{
+    if WinActive("ahk_exe SanAndreas.exe")
+    {
+        SendInput {e down}
+        Sleep 30
+        SendInput {e up}
+    }
+}
+
+:gethandling
+if 
+00DF:   actor $PLAYER_ACTOR driving 
+jf @get
+03C0: 0@ = actor $PLAYER_ACTOR car
+02E3: 0@ = car 0@ speed
+0092: 0@ = float 0@ to_integer
+0012: 0@ *= 2
+if 
+0@ >= 10// or more
+jf @get
+018C: play_sound 1056 at 0.0 0.0 0.0 
+jump @get
+
+Like this or no?
+
+{VertexFix/The San Andreas Full Fixed}
+local lib = GetLibAddress("libGTASA.so");
+if(lib != 0)
+{
+  WriteAddress(lib + 0x1C8064, "\x01", 1);
+  WriteAddress(lib + 0x1C8082, "\x01", 1);
+}
+DeleteMe(); // Delete script from RAM after it did it's job
+i wrote 360.0
+
+{Asi_loader}
+SCRIPT_START
+{
+NOP
+LVAR_INT mon
+main_loop:
+IF IS_KEY_PRESSED VK_KEY_1
+    STORE_SCORE 0 mon
+ELSE
+    GOTO main_loop
+ENDIF
+IF IS_KEY_PRESSED VK_KEY_2
+    SET_CHAR_MONEY 0 mon
+ELSE
+    GOTO main_loop
+ENDIF
+GOTO main_loop
+}
+SCRIPT_END
+
+Problem2-
+SCRIPT_START
+{
+NOP
+LVAR_INT mon
+main_loop:
+IF IS_KEY_PRESSED VK_KEY_1
+    mon += 1
+ELSE
+    GOTO main_loop
+ENDIF
+IF IS_KEY_PRESSED VK_KEY_2
+    mon -= 1
+ELSE
+    GOTO main_loop
+ENDIF
+
+IF IS_KEY_PRESSED VK_KEY_3
+    SET_PLAYER_MODEL 0 mon
+ELSE
+    GOTO main_loop
+ENDIF
+
+PRINT_FORMATTED_NOW "MODEL: %i" mon 1000
+GOTO main_loop
+}
+SCRIPT_END
+
+{Hot Coffee}
+SCRIPT_START
+{
+cjplayer.gethorny 
+thread sex.ifp
+start action
+NOP
+
+main_loop:
+WAIT 0
+PRINT_STRING_NOW "Sup world." 1000
+GOTO main_loop
+}
+SCRIPT_END
+
+which is a script from a tutorial
+
+this is my settings.json file
+
+
+{Four Dragon Casino Fix}
+
+i dont know about you but it looks like you're missing some ends here
+i put spaces to make it easier to see
+
+:TELEPORT_19
+wait 0 
+if 
+    :TELEPORT_27
+    wait 0 
+    if 
+        key_down 187
+    jf @TELEPORT_19
+    for 0@ = 0 to 175 
+        0AB1: @GetRadarBlipInfo 1 BlipID 0@ _Return: ColorID 2@ RGB         2@ 3@ 4@ XYZ 5@ 6@ 7@ IconID 8@ 
+        if
+            8@ == 0  
+        then
+            Actor.PutAt($PLAYER_ACTOR, 5@, 6@, 7@)
+            wait 100 
+            jump @TELEPORT_27 {chengho}
+end
+
+{Camera Adjuster}
+then it jump
+:sam4
+wait 100
+Model.Load(2634)
+038B: load_requested_models 
+if and
+   Model.Available(2634)
+   04EE: animation "SAM_COMBOS" loaded
+jf @sam4
+gosub @TRICKS_29523 
+01B9: set_actor $sam armed_weapon_to 11 
+0812: AS_actor $sam perform_animation "FIGHTC_4B" IFP "SAM_COMBOS"  framedelta 4.0 loopA 0 lockX 1 lockY 1 lockF 1 time -1// versionB
+wait 270
+wait 270
+$ZANGEKI = Object.Create(2634, 0.0, 0.0, 0.0)
+Model.Destroy(2634)
+Object.SetImmunities($ZANGEKI, 1, 1, 1, 1, 1)
+0750: set_object $ZANGEKI visibility 1 
+08D2: object $ZANGEKI scale_model 0.0001 
+Object.ToggleInMovingList($ZANGEKI) = True
+0906: set_object $ZANGEKI mass_to 10.0 // float 
+069B: attach_object $ZANGEKI to_actor $sam with_offset 0.0 0.0 0.0 rotation 0.0 0.0 0.0 
+0682: detach_object $ZANGEKI 0.0 0.0 0.0 collision_detection 1 
+04C4: store_coords_to 17@ 18@ 19@ from_actor $sam 0.0 120.0 0.0 
+04C4: store_coords_to 20@ 21@ 22@ from_actor $sam with_offset 0.0 0.0 0.0 
+0063: 17@ -= 20@ // (float) 
+0063: 18@ -= 21@ // (float) 
+0063: 19@ -= 22@ // (float) 
+Object.Throw($ZANGEKI, 17@, 18@, 19@)
+Camera.Shake(100)
+066E: create_particle "S_CIRCLE3" attached_to_object $ZANGEKI with_offset 0.0 -1.0 0.3 rotation 180.0 90.0 0.0 flag 1 store_to 1@ 
+066E: create_particle "S_CIRCLE3" attached_to_object $ZANGEKI with_offset 0.0 -2.0 0.3 rotation 90.0 45.0 0.0 flag 1 store_to 2@ 
+066E: create_particle "S_CIRCLE3" attached_to_object $ZANGEKI with_offset 0.0 -3.0 0.3 rotation 0.0 0.0 0.0 flag 1 store_to 3@ 
+064F: remove_references_to_particle 1@
+064F: remove_references_to_particle 2@
+064F: remove_references_to_particle 3@ 
+wait 400
+0812: AS_actor $sam perform_animation "FIGHTC_4C" IFP "SAM_COMBOS"  framedelta 4.0 loopA 0 lockX 1 lockY 1 lockF 0 time -1// versionB 
+gosub @TRICKS_29562 
+wait 800
+IF AND
+0474:   actor $PLAYER_ACTOR near_object_in_cube $ZANGEKI radius 1.5 1.5 1.5 sphere 0
+05BB: AS_actor $PLAYER_ACTOR fall_down 1 time_on_ground 500
+0792: disembark_instantly_actor $PLAYER_ACTOR
+Object.Destroy($ZANGEKI)
+WAIT 300
+05E2: AS_actor $sam kill_actor $player_actor
+THEN
+END
+
+END_THREAD 
+By Chengho Yazid
